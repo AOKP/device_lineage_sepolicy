@@ -6,3 +6,6 @@ hal_client_domain(platform_app, hal_lineage_fod)
 
 # Allow LiveDisplay HAL service to be found
 hal_client_domain(platform_app, hal_lineage_livedisplay)
+
+# Allow EdgeGesture service to be found
+allow platform_app edgegesture_service:service_manager find;
